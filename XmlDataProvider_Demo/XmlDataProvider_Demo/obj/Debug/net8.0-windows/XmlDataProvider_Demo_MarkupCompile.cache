@@ -1,5 +1,5 @@
 ﻿XmlDataProvider_Demo
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\PRN212\PRN212_Assignment1\XmlDataProvider_Demo\XmlDataProvider_Demo\App.xaml
 11407045341
 
-61548784227
+4545047841
 198-294894759
 MainWindow.xaml;
 
-True
+False
 

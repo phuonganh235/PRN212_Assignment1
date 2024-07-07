@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:XmlDataProvider_Demo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <XmlDataProvider XPath="ContactList/Contact" Source="D:\PRN212\PRN212_Assignment1\XmlDataProvider_Demo\XmlDataProvider_Demo\Contacts.xml" x:Key="CTList"/>
+    </Window.Resources>
     <Grid>
-
+        <ListView ItemsSource="{Binding Source={StaticResource CTList}}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" Width=" 100" DisplayMemberBinding="{Binding XPath=@Id}"/>
+                    <GridViewColumn Header="Contact Name" Width="250" DisplayMemberBinding="{Binding XPath=ContactName}"/>
+                    <GridViewColumn Header="Company" Width=" 250" DisplayMemberBinding="{Binding XPath=Company}"/>
+                    <GridViewColumn Header="Phone" Width="200" DisplayMemberBinding="{Binding XPath=Phone}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

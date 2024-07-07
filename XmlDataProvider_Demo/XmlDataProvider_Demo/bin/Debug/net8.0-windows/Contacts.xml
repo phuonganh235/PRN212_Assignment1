@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContactList>
+	<Contact Id="001">
+		<ContactName>Alex</ContactName>
+		<Company>FPT</Company>
+		<Phone>0987654321</Phone>
+	</Contact>
+	<Contact Id="002">
+		<ContactName>Victoria</ContactName>
+		<Company>Masan Group</Company>
+		<Phone>0987654321</Phone>
+	</Contact>
+	<Contact Id="003">
+		<ContactName>John</ContactName>
+		<Company>Viettel</Company>
+		<Phone>0246813579</Phone>
+	</Contact>
+</ContactList>

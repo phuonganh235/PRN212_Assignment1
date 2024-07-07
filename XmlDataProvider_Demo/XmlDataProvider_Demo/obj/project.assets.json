@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN212\\XmlDataProvider_Demo\\XmlDataProvider_Demo\\XmlDataProvider_Demo.csproj",
+      "projectUniqueName": "D:\\PRN212\\PRN212_Assignment1\\XmlDataProvider_Demo\\XmlDataProvider_Demo\\XmlDataProvider_Demo.csproj",
       "projectName": "XmlDataProvider_Demo",
-      "projectPath": "D:\\PRN212\\XmlDataProvider_Demo\\XmlDataProvider_Demo\\XmlDataProvider_Demo.csproj",
+      "projectPath": "D:\\PRN212\\PRN212_Assignment1\\XmlDataProvider_Demo\\XmlDataProvider_Demo\\XmlDataProvider_Demo.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN212\\XmlDataProvider_Demo\\XmlDataProvider_Demo\\obj\\",
+      "outputPath": "D:\\PRN212\\PRN212_Assignment1\\XmlDataProvider_Demo\\XmlDataProvider_Demo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
