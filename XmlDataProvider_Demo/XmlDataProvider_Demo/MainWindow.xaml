@@ -10,13 +10,36 @@
         <XmlDataProvider XPath="ContactList/Contact" Source="D:\PRN212\PRN212_Assignment1\XmlDataProvider_Demo\XmlDataProvider_Demo\Contacts.xml" x:Key="CTList"/>
     </Window.Resources>
     <Grid>
-        <ListView ItemsSource="{Binding Source={StaticResource CTList}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" Fill="LightBlue"/>
+        <TextBlock Grid.Row="0" Text="Person information" FontSize="32" FontWeight="Bold" Foreground="Red"/>
+        <WrapPanel Orientation="Vertical" Grid.Row="0" Margin="10,40,0,0">
+            <Label Content="ID"/>
+            <TextBox Width="200" Height="25" x:Name="txtID"/>
+            <Label Content="ContactName" />
+            <TextBox Width="200" Height="25" x:Name="txtContactName"/>
+            <Label Content="Company"/>
+            <TextBox  Width="200" Height="25" x:Name="txtCompany"/>
+            <Label Content="Phone"/>
+            <TextBox Width="200" Height="25" x:Name="txtPhone"  />
+            <StackPanel Orientation="Horizontal">
+                <Button Click="btn_InsertClick" Content="Insert" Width="50" Margin="7"/>
+                <Button Click="btn_UpdateClick" Content="Update" Width="50" Margin="7"/>
+                <Button Click="btn_DeleteClick" Content="Delete" Width="50" Margin="7"/>
+            </StackPanel>
+        </WrapPanel>
+
+        <ListView Grid.Row="1" x:Name="lvPerson" SelectedItem="{Binding SelectedItem}" SelectionChanged="listView_Selected">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="ID" Width=" 100" DisplayMemberBinding="{Binding XPath=@Id}"/>
-                    <GridViewColumn Header="Contact Name" Width="250" DisplayMemberBinding="{Binding XPath=ContactName}"/>
-                    <GridViewColumn Header="Company" Width=" 250" DisplayMemberBinding="{Binding XPath=Company}"/>
-                    <GridViewColumn Header="Phone" Width="200" DisplayMemberBinding="{Binding XPath=Phone}"/>
+                    <GridViewColumn Header="ID" Width="50" DisplayMemberBinding="{Binding Path=ID}"/>
+                    <GridViewColumn Header="Contact Name" Width="200" DisplayMemberBinding="{Binding Path=ContactName}"/>
+                    <GridViewColumn Header="Company" Width="200" DisplayMemberBinding="{Binding Path=Company}"/>
+                    <GridViewColumn Header="Phone" Width="200" DisplayMemberBinding="{Binding Path=Phone}"/>
                 </GridView>
             </ListView.View>
         </ListView>
